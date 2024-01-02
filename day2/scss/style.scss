@@ -77,9 +77,13 @@ a {
 
 .c-btn {
     border: 2px solid #b84646;
+    transform: skew(-20deg);
+    width: 90%;
+    box-shadow: 5px 5px 10px #ff4500;
+    margin: auto;
     
     &__link {
-        padding: 18px 0;
+        padding: 15px 0;
     }
 }
 
