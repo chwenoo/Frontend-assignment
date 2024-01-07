@@ -1,0 +1,39 @@
+.c-card {
+
+    border-radius: 20px;
+    text-align: center;
+    background-color: $colorWhite;
+    
+    &__img {
+
+        border-radius: 20px;
+        overflow: hidden;
+
+        img {
+            // width: auto;
+            margin: 0 auto;
+        }
+    }
+
+    &__text {
+
+        h3 {
+            font-family: 'Archivo Black', sans-serif;
+            font-size: 18px;
+            line-height: 28px;
+            margin: 14px 0 5px;
+        }
+
+        p {
+            line-height: 26px;
+        }
+    }
+}
+
+.c-card-inner {
+    padding: 40px 20px;
+}
+
+.img-auto {
+    width: auto;
+}

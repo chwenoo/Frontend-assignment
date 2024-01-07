@@ -1,0 +1,21 @@
+@import 'foundation/resets';
+@import 'foundation/setting';
+@import 'foundation/init';
+@import 'foundation/fonts';
+
+// layout
+@import 'layout/header';
+@import 'layout/layout';
+@import 'layout/footer';
+
+// Object
+@import 'object/project/mainvisual';
+@import 'object/project/services';
+@import 'object/project/form';
+
+@import 'object/components/btn';
+@import 'object/components/title';
+@import 'object/components/card';
+@import 'object/components/top-arrow';
+
+

@@ -1,0 +1,27 @@
+.l-wrap-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.l-row {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px 15px;
+
+    &__col {
+        width: 24%;
+    }
+}
+
+.l-my-8 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+@media (min-width: 1400px) {
+    .l-wrap-inner {
+        max-width: 1518px;
+    }
+}
