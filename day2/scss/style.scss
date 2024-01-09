@@ -129,7 +129,7 @@ a {
 }
 
 .faq {
-    &__q {
+    &__ques {
         background-color: $brandColor;
         color: $white;
         text-transform: uppercase;
@@ -137,32 +137,38 @@ a {
         padding: 20px;
         margin-top: 25px;
         position: relative;
-
-        &::before {
-            content: "";
-            width: 10px;
-            height: 2px;
-            background-color: $white;
-            position: absolute;
-            top: 50%;
-            right: 40px;
-            transform: translateY(-50%);
-        }
         
         &::after {
-            content: "";
-            width: 2px;
-            height: 10px;
-            background-color: $white;
+            content: "+";
             position: absolute;
             top: 50%;
-            right: 44px;
+            right: 45px;
             transform: translateY(-50%);   
         }
     }
     &__ans {
         text-align: left;
-        padding: 10px;
+        // padding: 10px;
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+        transition: all 0.5s ease;
+    }
+
+    &.show {
+
+        .faq__ques {
+            &::after {
+                content: "-";
+            }
+        }
+
+        .faq__ans {
+            padding: 10px;
+            visibility: visible;
+            opacity: 1;
+            height: auto;  
+        }
     }
 }
 
