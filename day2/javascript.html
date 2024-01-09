@@ -12,15 +12,14 @@
     <form action="" novalidate>
       <dl>
         <dt><label for="first-name">First Name: <span>*</span></label></dt>
-        <dd><input data-require type="text" name="first-name"><p class="error"></p></dd> 
+        <dd><input data-require type="text" name="first-name" id="first-name"><p class="error"></p></dd> 
       </dl>
       
-
       <dl>
-        <dt><label for="lastname">Last Name: <span>*</span></label></dt>
-        <dd><input data-require type="text" name="last-name"><p class="error"></p></dd>
+        <dt><label for="last-name">Last Name: <span>*</span></label></dt>
+        <dd><input data-require type="text" name="last-name" id="last-name" class="last-name"><p class="error"></p></dd>
       </dl>
-
+      
       <dl>
         <dt><label for="id">ID: <span>*</span></label></dt>
         <dd><input data-require type="text" name="id"><p class="error"></p></dd>
@@ -46,5 +45,7 @@
       <input type="submit" class="submit">
     </form>
   </div>
+
+  <script src="js/formJs.js"></script>
 </body>
 </html>
