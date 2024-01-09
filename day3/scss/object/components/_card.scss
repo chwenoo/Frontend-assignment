@@ -3,29 +3,44 @@
     border-radius: 20px;
     text-align: center;
     background-color: $colorWhite;
-    
+
     &__img {
 
         border-radius: 20px;
-        overflow: hidden;
+        // overflow: hidden;
 
         img {
             // width: auto;
             margin: 0 auto;
-        }
-    }
-
-    &__text {
-
-        h3 {
-            font-family: 'Archivo Black', sans-serif;
-            font-size: 18px;
-            line-height: 28px;
-            margin: 14px 0 5px;
+            border-radius: 20px;
         }
 
-        p {
-            line-height: 26px;
+        .price {
+            width: 145px;
+            height: 50px;
+            line-height: 50px;
+            color: #ff4500;
+            border-radius: 15px;
+            text-align: center;
+            background-color: #fff;
+
+            margin: -25px auto 0;
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        &__text {
+
+            h3 {
+                font-family: 'Archivo Black', sans-serif;
+                font-size: 18px;
+                line-height: 28px;
+                margin: 14px 0 5px;
+            }
+
+            p {
+                line-height: 26px;
+            }
         }
     }
 }

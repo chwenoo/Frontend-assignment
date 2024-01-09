@@ -28,15 +28,18 @@
         }
 
         .app {
-            display: flex;
+            ul {
+                display: flex;
+                li {   
+                    &:last-child {
+                        margin-left: 12px;
+                    }
 
-            a {
-                &:last-child {
-                    margin-left: 12px;
-                }
-
-                img {
-                    width: auto;            
+                    a {
+                        img {
+                            width: auto;            
+                        }
+                    }
                 }
             }
         }
