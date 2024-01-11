@@ -98,7 +98,7 @@ a {
   color: #fff;
 }
 
-.faq__q {
+.faq__ques {
   background-color: #b94646;
   color: #fff;
   text-transform: uppercase;
@@ -107,29 +107,28 @@ a {
   margin-top: 25px;
   position: relative;
 }
-.faq__q::before {
-  content: "";
-  width: 10px;
-  height: 2px;
-  background-color: #fff;
+.faq__ques::after {
+  content: "+";
   position: absolute;
   top: 50%;
-  right: 40px;
-  transform: translateY(-50%);
-}
-.faq__q::after {
-  content: "";
-  width: 2px;
-  height: 10px;
-  background-color: #fff;
-  position: absolute;
-  top: 50%;
-  right: 44px;
+  right: 45px;
   transform: translateY(-50%);
 }
 .faq__ans {
   text-align: left;
-  padding: 10px;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  transition: all 0.5s ease;
+}
+.faq.show .faq__ques::after {
+  content: "-";
+}
+.faq.show .faq__ans {
+  padding: 20px;
+  visibility: visible;
+  opacity: 1;
+  height: auto;
 }
 
 @media (max-width: 800px) {
